@@ -24,8 +24,8 @@ weatherForm.addEventListener('submit', (event) => {
                 messageOne.textContent = data.error
             }else{
                 messageOne.textContent = data.location
-                messageTwo.textContent = data.forecastData.temperature + ' degrees and feels like ' + data.forecastData.feels_like
-
+                messageTwo.textContent = 'It is currently ' + data.forecastData.temperature + ' degrees.' +
+                    ' \nIt feels like ' + data.forecastData.feels_like + ' degrees. \n Humidity: ' + data.forecastData.humidity + '%.'
             }
         })
 })
